@@ -1,0 +1,8 @@
+{
+  "name": "@openrock/inventory-serialization",
+  "version": "1.0.0",
+  "description": "Round-trips a real Bedrock ItemStack (durability, enchantments, name, lore) to/from plain JSON, since ItemStack objects can't be stored directly as dynamic-property data.",
+  "license": "MPL-2.0",
+  "private": true,
+  "main": "src/register.js"
+}
