@@ -98,6 +98,7 @@ function register() {
     return { api: { serializeItem, deserializeItem } };
 }
 
-module.exports = register;
-module.exports.serializeItem = serializeItem;
-module.exports.deserializeItem = deserializeItem;
+// Object.assign() in ONE statement - see @openrock/pathfinding's header for
+// why (esbuild tree-shaking dropped separate trailing assignments, caught
+// via a real BDS run).
+module.exports = Object.assign(register, { serializeItem, deserializeItem });
